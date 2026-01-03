@@ -1,0 +1,72 @@
+/* Basic styles for the entire application */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom Bootstrap variable overrides */
+:root {
+  --bs-primary: #1a5ab9; /* Azul primario personalizado (botón, enlaces) - Más vibrante */
+  --bs-primary-rgb: 26, 90, 185; /* RGB del azul primario */
+  --bs-secondary: #6c757d; /* Puedes ajustar si tienes un color secundario */
+  --bs-light: #212a4f; /* Fondo oscuro exterior del login y registro */
+  --bs-dark: #212a4f; /* Usar el mismo fondo oscuro para la clase .bg-dark */
+  --bs-body-bg: #f0f2f5; /* Fondo del body, generalmente blanco, pero el diseño principal es blanco dentro del card */
+  --bs-blue: #1a5ab9; /* Asegurarse de que el color azul principal de Bootstrap coincida */
+
+  /* Color de fondo para elementos seleccionados o de acento ligero, como las tarjetas de rol no seleccionadas */
+  --bs-gray-100: #f8f9fa; /* Color de fondo para el interior de las tarjetas que no están seleccionadas */
+  --bs-gray-200: #e6e7f7; /* Un gris muy claro/azulado para fondos sutiles, como las tarjetas de rol seleccionadas */
+}
+
+/* Ajustes para el color del texto primario de Bootstrap si se usa */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+  background-color: #154694; /* Un tono más oscuro para el hover del botón */
+  border-color: #154694;
+}
+
+.border-primary {
+  border-color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+/* Ajustes para la tarjeta principal del formulario de registro */
+.card {
+  background-color: #ffffff; /* Asegurar que el fondo de la tarjeta sea blanco */
+}
+
+/* Diagnostic styles for Bootstrap Modal */
+/* Eliminar los estilos de diagnóstico del modal */
+/*
+.modal.show.d-block {
+  z-index: 1050 !important;
+  opacity: 1 !important;
+}
+
+.modal-backdrop.show {
+  z-index: 1040 !important;
+  opacity: 0.5 !important;
+  background-color: black !important;
+}
+*/
